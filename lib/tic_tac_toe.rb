@@ -7,7 +7,6 @@ end
 
 
 # WIN_COMBINATIONS within the body of TicTacToe
-
 WIN_COMBINATIONS = [
     [0,1,2],
     [3,4,5],
@@ -20,8 +19,7 @@ WIN_COMBINATIONS = [
   ]
   
   #display_board: not the instance variable @board
-  
-    def display_board
+   def display_board
     puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
     puts "-----------"
     puts " #{@board[3]} | #{@board[4]} | #{@board[5]} "
@@ -29,19 +27,15 @@ WIN_COMBINATIONS = [
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
   
-  # input_index
   
   def input_to_index(user_input)
     user_input.to_i - 1
   end
   
-  # move: Note that we deleted the boar arguement, and added @ to board.  For instance, #move was move(board, position, char), but now board is intialized, so it is a characteristic of TicTacToe, no need to have it as an argument.  So, #move became simply move(position, char).
-  
-  
   def move(position, char)
     @board[position] = char
   end
-# For #move to work, we need to position_taken and valid_move
+
   def position_taken?(index_i)
     ((@board[index_i] == "X") || (@board[index_i] == "O"))
   end
@@ -139,9 +133,3 @@ end
 end
 
 
-#bin/tictactoe
-#require 'pry'
-#require_relative '../lib/tic_tac_toe.rb'
-
-#game = TicTacToe.new
-#game.play
