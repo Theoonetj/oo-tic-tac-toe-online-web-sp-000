@@ -139,3 +139,5 @@ def play
 end
 
 end
+
+ board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
