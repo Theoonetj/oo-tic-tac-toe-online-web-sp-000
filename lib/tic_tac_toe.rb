@@ -1,13 +1,3 @@
-# BUNDLE!!!!!
-
-# BIN/TICTACTOE
-# This is our main executable and will be how we run our game.
-
-# LIB/TIC_TAC_TOE.RB
-# Our main TicTacToe class will be defined here with all the data and logic required to play a game of tic tac toe via instances of TicTacToe.
-
-# SPEC
-# There are three test files that should be completed in order. 01_tic_tac_toe_spec.rb sets tests for our helper methods within TicTacToe. 02_play_spec.rb tests the main #play method. 03_cli_spec.rb tests the CLI.
 
 class TicTacToe
   def initialize(board = nil)
@@ -15,7 +5,6 @@ class TicTacToe
   end
 end 
 
-# The "pipes" || = or. This is saying that if the board returns nil, return an empty array.  So, either display the current board, or a new one.
 
 # WIN_COMBINATIONS within the body of TicTacToe
 
